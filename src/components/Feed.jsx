@@ -1,0 +1,33 @@
+import { Box, Stack, Typography } from "@mui/material";
+import Sidebar from "./Sidebar";
+
+function Feed() {
+  return (
+    <Stack
+      sx={{
+        flexDirection: { sx: "column", md: "row" },
+      }}
+    >
+      <Box
+        sx={{
+          height: { sx: "auto", md: "92vh" },
+          borderRight: "1px solid #9b8bcb",
+          px: { sx: 0, md: 2 },
+          backgroundColor: "#94e4ec",
+        }}
+      >
+        <Sidebar />
+
+        <Typography
+          className="copyright"
+          variant="body2"
+          sx={{ mt: 1.5, color: "#190667c9" }}
+        >
+          Copyright 2022 koukos
+        </Typography>
+      </Box>
+    </Stack>
+  );
+}
+
+export default Feed;
