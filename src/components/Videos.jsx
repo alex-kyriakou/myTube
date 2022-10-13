@@ -14,7 +14,7 @@ export default function Videos({ videos }) {
       {videos.map((item, idx) => {
         return (
           <Box key={idx}>
-            {item.id.videoId && <VideoCard videos={item} />}
+            {item.id.videoId && <VideoCard video={item} />}
             {item.id.channelId && <ChannelCard channelDetail={item} />}
           </Box>
         );
