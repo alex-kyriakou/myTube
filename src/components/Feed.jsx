@@ -1,8 +1,23 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+
+// import fetchAPI
+import { fetchFromAPI } from "../utils/fetchFromAPI";
+
+// import components
 import Sidebar from "./Sidebar";
 import Videos from "./Videos";
 
 function Feed() {
+  const [selectedCategory, setselectedCategory] = useState("New");
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {
+      setVideos(data.items);
+    });
+  }, [selectedCategory]);
+
   return (
     <Stack
       sx={{
@@ -14,11 +29,15 @@ function Feed() {
           height: { sx: "auto", md: "92vh" },
           borderRight: "1px solid #9b8bcb",
           px: { sx: 0, md: 2 },
+
           backgroundColor: "#94e4ec",
-          p: 2,
+          // p: 2,
         }}
       >
-        <Sidebar />
+        <Sidebar
+          selectedCategory={selectedCategory}
+          setselectedCategory={setselectedCategory}
+        />
 
         <Typography
           className="copyright"
@@ -36,10 +55,10 @@ function Feed() {
           mb={2}
           sx={{ color: "white" }}
         >
-          New <span style={{ color: "#94e4ec" }}>videos</span>
+          {selectedCategory} <span style={{ color: "#94e4ec" }}>videos</span>
         </Typography>
 
-        <Videos />
+        <Videos videos={videos} />
       </Box>
     </Stack>
   );
