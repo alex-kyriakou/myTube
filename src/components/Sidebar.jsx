@@ -9,7 +9,7 @@ function Sidebar({ selectedCategory, setselectedCategory }) {
         overflowY: "auto",
         height: { sx: "auto", md: "95%" },
         flexDirection: { md: "column" },
-        background: "#94e4ec",
+        background: "#122030",
         // paddingRight: "70px",
         // width: "200px",
         // md: '100%',
@@ -24,7 +24,7 @@ function Sidebar({ selectedCategory, setselectedCategory }) {
             className="category-btn"
             style={{
               background: category.name === selectedCategory && "#9b8bcb",
-              color: "#0d0237",
+              color: "#ab9ee0",
               // width: "150px",
             }}
             key={category.name}

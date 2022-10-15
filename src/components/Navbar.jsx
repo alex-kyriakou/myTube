@@ -12,10 +12,10 @@ const Navbar = () => (
     p={1}
     sx={{
       position: "sticky",
-      background: "#281f47",
+      background: "#182131",
       top: 0,
       justifyContent: "space-between",
-      borderBottom: "1px solid #9b8bcb",
+      borderBottom: "1px solid #8bcacb3b",
     }}
   >
     <Link

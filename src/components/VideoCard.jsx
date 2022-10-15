@@ -29,7 +29,7 @@ const VideoCard = ({
       <CardContent
         sx={{
           width: 296,
-          backgroundColor: "#0d0237",
+          backgroundColor: "#082c41",
           height: "106px",
         }}
       >

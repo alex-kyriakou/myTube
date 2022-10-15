@@ -23,7 +23,7 @@ function SearchBar() {
       onSubmit={handleSubmitForm}
       sx={{
         borderRadius: 20,
-        border: "1px solid #444e9e",
+        border: "4px solid #94e4ec",
         pl: 2,
         boxShadow: "none",
         mr: { sm: 5 },

@@ -27,10 +27,10 @@ function Feed() {
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "1px solid #9b8bcb",
+          borderRight: "1px solid #8bcacb3b",
           px: { sx: 0, md: 2 },
 
-          backgroundColor: "#94e4ec",
+          backgroundColor: "#141d2d",
           // p: 2,
         }}
       >

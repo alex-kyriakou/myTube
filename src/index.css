@@ -50,7 +50,7 @@ a {
   color: #0d0237 !important;
 }
 
-.category-btn:hover span {
+.category-btn:focus span {
   color: #0d0237 !important;
 }
 
@@ -79,8 +79,9 @@ a {
   background: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid #0d0237;
+  border-bottom: 1px solid #0d02373d;
   color: #190667c9;
+  color: #ab9ee0;
   padding: 7px 15px;
   margin: 10px 0px;
   border-radius: 20px;
