@@ -9,7 +9,7 @@ const Navbar = () => (
   <Stack
     direction="row"
     alignItems="center"
-    p={2}
+    p={1}
     sx={{
       position: "sticky",
       background: "#281f47",
@@ -18,8 +18,14 @@ const Navbar = () => (
       borderBottom: "1px solid #9b8bcb",
     }}
   >
-    <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+    <Link
+      to="/"
+      style={{ display: "flex", alignItems: "center", marginRight: "0" }}
+    >
       <img src={logo} alt="logo" height={45} />
+      <p className="logo_title">
+        my<span>Tube</span>
+      </p>
     </Link>
     <SearchBar />
   </Stack>

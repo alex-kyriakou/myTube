@@ -1,5 +1,5 @@
 import { Stack, Box } from "@mui/material";
-import ChannelCard from "./ChannelCard";
+
 import VideoCard from "./VideoCard";
 
 export default function Videos({ videos }) {
@@ -8,15 +8,13 @@ export default function Videos({ videos }) {
       direction="row"
       flexWrap="wrap"
       alignItems="center"
-      justifyContent="start"
-      gap={2}
+      justifyContent="center"
+      gap={3}
+      sx={{ paddingTop: "20px" }}
     >
       {videos.map((item, idx) => {
         return (
-          <Box key={idx}>
-            {item.id.videoId && <VideoCard video={item} />}
-            {item.id.channelId && <ChannelCard channelDetail={item} />}
-          </Box>
+          <Box key={idx}>{item.id.videoId && <VideoCard video={item} />}</Box>
         );
       })}
     </Stack>

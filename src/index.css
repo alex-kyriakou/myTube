@@ -35,9 +35,14 @@ a {
   background-color: transparent;
 }
 
-input::placeholder {
-  background-color: #9b8bcb !important;
-  color: #0d0237;
+.logo_title {
+  color: #5865c5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo_title span {
+  color: #9b8bcb;
 }
 
 .category-btn:hover {
@@ -56,8 +61,12 @@ input::placeholder {
 
 .search-bar {
   border: none;
+  border-radius: 25px;
   outline: none;
   width: 350px;
+
+  color: black;
+  padding: 5px;
 }
 
 .category-btn {
