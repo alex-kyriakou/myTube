@@ -10,6 +10,7 @@ function Sidebar({ selectedCategory, setselectedCategory }) {
         height: { sx: "auto", md: "95%" },
         flexDirection: { md: "column" },
         background: "#141d2d",
+        zIndex: "1000",
         // paddingRight: "70px",
         // width: "200px",
         // md: '100%',
