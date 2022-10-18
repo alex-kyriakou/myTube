@@ -42,7 +42,7 @@ a {
 }
 
 .logo_title span {
-  color: #9b8bcb;
+  color: #c2adff;
 }
 
 .category-btn:hover {
@@ -51,6 +51,9 @@ a {
 }
 
 .category-btn:focus span {
+  color: #0d0237 !important;
+}
+.category-btn:active span {
   color: #0d0237 !important;
 }
 
@@ -79,7 +82,7 @@ a {
   background: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid #0d02373d;
+
   color: #190667c9;
   color: #ab9ee0;
   padding: 7px 15px;

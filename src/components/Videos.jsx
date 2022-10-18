@@ -2,10 +2,12 @@ import { Stack, Box } from "@mui/material";
 
 import VideoCard from "./VideoCard";
 
-export default function Videos({ videos }) {
+export default function Videos({ videos, direction }) {
+  if (!videos?.length) return "Loading...";
+
   return (
     <Stack
-      direction="row"
+      direction={direction || "row"}
       flexWrap="wrap"
       alignItems="center"
       justifyContent="center"
